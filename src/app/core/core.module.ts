@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,9 +18,11 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports: [
+    HomeComponent,
     HeaderComponent, 
     FooterComponent,
     PageNotFoundComponent
